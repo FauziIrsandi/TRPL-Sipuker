@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sipuker</title>
 
+{{asset('dist/')}}
+
   <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css')}}">
   <link rel="stylesheet" href="{{ asset('assets/fonts/font-awesome.min.css')}}">
   <link rel="stylesheet" href="{{ asset('assets/fonts/ionicons.min.css')}}">

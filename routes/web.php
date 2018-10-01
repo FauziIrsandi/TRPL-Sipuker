@@ -16,7 +16,14 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::get('/logout', 'Auth\LoginController@logout'); //method sakti
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('/register', 'NewRegisterController@register');
+
+Route::get('/admin', 'PemerintahController@index')->middleware('pemerintah'); //('')sesuai nama kernel
+
+Route::get('/pengusaha', 'PengusahaController@index')->middleware('pengusaha');
+
+Route::get('/pengusaha/profil', 'PengusahaController@getProfil')->middleware('pengusaha');
