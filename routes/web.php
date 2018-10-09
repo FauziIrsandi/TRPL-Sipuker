@@ -26,4 +26,14 @@ Route::get('/admin', 'PemerintahController@index')->middleware('pemerintah'); //
 
 Route::get('/pengusaha', 'PengusahaController@index')->middleware('pengusaha');
 
+Route::get('/pengusaha/pinjamanModal', 'PengusahaController@getModal')->middleware('pengusaha');
+
+Route::get('/admin/pinjamanModalprt', 'PemerintahController@getModalPrt')->middleware('pemerintah');
+
 Route::get('/pengusaha/profil', 'PengusahaController@getProfil')->middleware('pengusaha');
+
+Route::get('/admin/profilprt', 'PemerintahController@getProfil')->middleware('pemerintah');
+
+Route::post('pengusaha/pinjamanModal', 'PengusahaController@pinjam')->middleware('pengusaha');;
+
+Route::post('/admin/pinjamanModalprt', 'PemerintahController@updateStatusPinjaman')->middleware('pemerintah');

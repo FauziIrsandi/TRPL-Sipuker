@@ -18,23 +18,23 @@
     <link rel="stylesheet" href="{{asset ('assets/css/Login-Form-Clean.css')}}">
     <link rel="stylesheet" href="{{asset ('assets/css/Navigation-with-Search.css')}}">
     <link rel="stylesheet" href="{{asset ('assets/css/Simple-Slider.css')}}">
-    <link rel="stylesheet" href="{{asset ('assets/css/beranda.css')}}">
-
+    <link rel="stylesheet" href="{{asset ('assets/css/styles.css')}}">
 </head>
-<body style="background-color: #f5f6fa">
+
+<body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="background-color:rgb(178,225,230);">
-        <div class="container"><a class="navbar-brand" href="#" style="/*margin-left:50px;*/"><img src="{{asset ('assets/img/logo/logo.png')}}" style="width:70px;margin-left:10px;"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand" href="#" style="/*margin-left:50px;*/"><img src="{{ asset ('assets/img/logo/logo.png')}}" style="width:70px;margin-left:10px;"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1" style="margin-left:80px;margin-top:30px;">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/admin" style="color:rgb(6,6,6);font-weight:bold;font-size:18px;">Beranda</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/admin/pinjamanModalprt" style="color:rgb(6,6,6);font-weight:bold;font-size:18px;">Pinjaman Modal</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(6,6,6);font-weight:bold;font-size:18px;">Beranda</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(6,6,6);font-weight:bold;font-size:18px;">Pinjaman Modal</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(6,6,6);font-weight:bold;font-size:18px;">Kegiatan UMKM</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(0,0,0);font-weight:bold;font-size:18px;">Forum</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(0,0,0);font-weight:bold;font-size:18px;">Laporan</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-weight:bold;font-size:18px;color:rgb(0,0,0);margin-left:80px;"><img src="{{asset ('assets/img/account.png')}}" style="width:30px;">&nbsp;Hafiz</a>
+                    <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" style="font-weight:bold;font-size:18px;color:rgb(0,0,0);margin-left:80px;"><img src="assets/img/account.png" style="width:30px;">&nbsp;Hafiz</a>
                         <div
-                            class="dropdown-menu" role="menu"><a class="dropdown-item disabled" role="presentation" href="/admin/profilprt" style="color:rgb(0,0,0);">Akun</a><a class="dropdown-item" role="presentation" href="{{url('logout')}}" style="color:rgb(8,8,8);">Logout</a></div>
+                            class="dropdown-menu" role="menu"><a class="dropdown-item disabled" role="presentation" href="login.html" style="color:rgb(0,0,0);">Akun</a><a class="dropdown-item" role="presentation" href="{{url('logout')}}" style="color:rgb(8,8,8);">Logout</a></div>
         </li>
         </ul>
         </div>
@@ -43,65 +43,23 @@
     <div class="row" style="margin-top:50px;">
         <div class="col">
             <div class="row" style="/*height:300px;*/">
-                    <form action="" method="post" id="form">
-                    <textarea class="form-control" rows="3"></textarea>
-                    <div class="file float-left btn btn yte" id="upload"><img src="{{ asset ('assets/img/outbox.png')}}" style="width: 25px;"> Upload <input class="ye" type="file" name="file"/>
-
-                    </div>
-                    <button type="submit" class="float-right btn btn-primary" id="kirim">Kirim</button>
-                   </form>
+                <div class="col"><textarea style="margin-left:200px;width:400px;height:100px;"></textarea><button class="btn btn-primary" type="button" style="margin-left:540px;">Kirim</button></div>
+                <div class="col"></div>
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="card" id="post">
+                    <div class="card" style="margin-left:200px;margin-top:80px;width:400px;">
                         <div class="card-header">
-                            <h5 class="mb-1" id="judulTopik"> Nama Topik</h5>
+                            <h5 class="mb-0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Nama Topik</h5>
                         </div>
                         <div class="card-body">
                             <p class="card-text">asasasasassasa</p>
-                            <br>
-                            <br>
-                            <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background-color:rgb(255,255,255);color:rgb(0,0,0); border-color: white;"><img src="{{asset ('assets/img/account.png')}}" style="width:30px;">100 Joined</button><button class="btn btn-primary" type="button" id="join">Join</button></div>
+                            <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background-color:rgb(255,255,255);color:rgb(0,0,0);"><img src="{{asset ('assets/img/account.png')}}" style="width:30px;">100 Joined</button><button class="btn btn-primary" type="button" style="margin-left:140px;width:100px;height:40px;">Join</button></div>
                         </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="card" id="post1">
-                        <div class="card-header">
-                            <h5 class="mb-1" id="judulTopik"> Nama Topik</h5>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">asasasasassasa</p>
-                            <br>
-                            <br>
-                            <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background-color:rgb(255,255,255);color:rgb(0,0,0); border-color: white;"><img src="{{asset ('assets/img/account.png')}}" style="width:30px;">100 Joined</button><button class="btn btn-primary" type="button" id="join">Join</button></div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="card" id="post1">
-                        <div class="card-header">
-                            <h5 class="mb-1" id="judulTopik"> Nama Topik</h5>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">asasasasassasa</p>
-                            <br>
-                            <br>
-                            <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="background-color:rgb(255,255,255);color:rgb(0,0,0); border-color: white;"><img src="{{asset ('assets/img/account.png')}}" style="width:30px;">100 Joined</button><button class="btn btn-primary" type="button" id="join">Join</button></div>
-                        </div>
-
                     </div>
                 </div>
             </div>
         </div>
-
-
         <div class="col" style="height:500px;">
             <div class="card" style="margin-left:100px;width:400px;">
                 <div class="card-header">
@@ -118,33 +76,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-body" id="activity">
-                    <p class="card-text"></p>
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="mb-0">Kegiatan UMKM</h5>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Blablabalbal</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body" id="activity">
-                    <p class="card-text"></p>
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="mb-0">Kegiatan UMKM</h5>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Blablabalbal</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-
     </div>
-    <div class="footer-dark" style="background-color:rgb(178,225,230); margin-top: 150px;">
+    <div class="footer-dark" style="background-color:rgb(178,225,230);">
         <footer>
             <div class="container">
                 <div class="row">
